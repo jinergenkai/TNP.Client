@@ -19,8 +19,8 @@ export default function BigCategoryCard({
     });
   }, []);
   return (
-    <div className="py-10 text-3xl text-center bg-white">
-      <div className="py-10 text-5xl text-center font-dejaVuSerif">{title}</div>
+    <div className="py-10 text-2xl text-center bg-white">
+      <div className="py-10 text-3xl text-center font-dejaVuSerif">{title}</div>
       <div className="flex justify-around">
         {item.map((item, index) => (
           <div key={index} className="m-12 text-left" data-aos="fade-up">

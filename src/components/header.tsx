@@ -29,20 +29,17 @@ export default function Header() {
       ${!headerVisible ? "transform -translate-y-full" : ""}
       `}
     >
-      <div className="flex items-center justify-between px-5 font-medium font-montserrat">
-        <div>
-          <NavItem href="/">Trang Chủ</NavItem>
-          <NavItem href="/jewelry">Sản phẩm</NavItem>
-          <NavItem href="/about">Về chúng tôi</NavItem>
-        </div>
+      <div className="flex items-center justify-between font-medium text-white align-middle font-montserrat ">
+          <img src="./logo.jpg" className="inline-block w-12 h-12 mr-4"></img>
+          <div className="top-0 flex-1 w-full text-4xl transform font-manhattan">
+            TAM NGAN PHAT
+          </div>
+          <div>
+            <NavItem href="/">Trang Chủ</NavItem>
+            <NavItem href="/jewelry">Sản phẩm</NavItem>
+            <NavItem href="/about">Về chúng tôi</NavItem>
+          </div>
         {/* <img src="/logo.png" alt="logo" className="h-[80px] w-[80px]" /> */}
-        <div
-        className="absolute text-6xl text-black font-manhattan left-[50%] transform translate-x-[-50%] top-0 p-4"
-        >HUYNH HANH</div>
-        <div>
-          <NavItem href="/jewelry">Đăng nhập</NavItem>
-          <NavItem href="/about">Đăng ký</NavItem>
-        </div>
       </div>
     </div>
   );

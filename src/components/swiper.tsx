@@ -12,9 +12,8 @@ interface Props {
 export default function IntroComponent({ image }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const setPlayback = () => {
-    if (videoRef.current)
-    videoRef.current.playbackRate = 4
-  }
+    if (videoRef.current) videoRef.current.playbackRate = 4;
+  };
   useEffect(() => {
     setPlayback();
   }, [videoRef]);
@@ -26,7 +25,7 @@ export default function IntroComponent({ image }: Props) {
                 className="object-cover w-full h-[80vh]"
               ></img> */}
 
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -35,10 +34,10 @@ export default function IntroComponent({ image }: Props) {
       >
         <source src={image} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
+      <img src="./background.png"></img>
 
-      <div className="absolute z-20 text-5xl leading-9 text-left text-white left-32 bottom-40">
-        <div className="my-6">Vững bền mọi công trình</div>
+      {/* <div className="my-6">Vững bền mọi công trình</div>
         <div className="text-2xl">
         Welcome to 
         <br/>
@@ -46,8 +45,11 @@ export default function IntroComponent({ image }: Props) {
         </div>
         <button className="px-16 py-1 text-xl text-white bg-black border-2 border-black border-solid hover:text-black hover:bg-transparent hover:border-solid hover:border-2 hover:border-black ">
           <a href="/jewelry">Xem thêm</a>
-        </button>
-      </div>
+        </button> */}
+      <img
+        src="banner2.png"
+        className="w-[20%] absolute left-[50%] tranform translate-x-[-50%] z-20 text-5xl leading-9 text-left text-white align-middle top-32"
+      ></img>
     </div>
   );
 }

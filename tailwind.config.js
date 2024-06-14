@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         transparent: "transparent",
-        current: "#f8f7f4",
+        current: "#101010",
+        contrast: "#FFFFFF",
+        lyellow: "#F4F4F4",
         white: "#ffffff",
         purple: "#3f3cbb",
         midnight: "#121063",

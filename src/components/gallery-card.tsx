@@ -13,7 +13,7 @@ export default function GalleryCard({ image, name , href}: { image: string; name
   return (
     <div className="relative bg-white" data-aos="zoom-in-up">
       <Link to={href}>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden bg-lyellow">
         <img
           src={
             image
@@ -32,7 +32,7 @@ export default function GalleryCard({ image, name , href}: { image: string; name
       </div>
 
       <div className="p-8 text-xs">
-        <div className="my-2 text-gray-500">New collection</div>
+        {/* <div className="my-2 text-gray-500">New collection</div> */}
         <div className="font-bold font-dejaVuSerif">{name}</div>
         {/* <div className="font-normal">Laboratory grown diamonds</div>
         <div className="mt-4 font-semibold">6,789,000 vnđ</div> */}

@@ -5,6 +5,7 @@ import BigCategoryCard from "../components/type-card";
 import AOS from "aos";
 import IntroComponent from "../components/swiper";
 import ServiceSection from "../components/service";
+import GalleryCard from "../components/gallery-card";
 // import ServiceSection from "../components/service";
 
 export default function Home() {
@@ -17,24 +18,19 @@ export default function Home() {
   return (
     <div className="relative">
       <Header></Header>
-      <IntroComponent image="/intro_video.mp4"></IntroComponent>
-
-      <br />
+      <IntroComponent image="/banner2.jpg"></IntroComponent>
 
       {/* mau vang */}
-      <div className={`bg-current text-center pt-10 text-3xl`}>
+      {/* <div className={`bg-current text-center pt-10 text-3xl`}>
         Building Materials
         <div className="p-10 text-xl">
-          Welcome to Huynh Hanh Construction Supplies,
-          <br />
-          your trusted partner for high-quality bricks and building materials.
         </div>
-      </div>
+      </div> */}
 
       {/* Infinitely Inspiring */}
       <BigCategoryCard
         key={1}
-        title="Wide range of construction materials"
+        title="SẢN PHẨM VÀ DỊCH VỤ"
         item={[
           {
             image: "./test_image/3-removebg-preview.png",
@@ -89,25 +85,26 @@ export default function Home() {
       </div>
 
       {/* shop by category */}
-      {/* <div className="py-10 text-5xl text-center">Shop by Category</div>
+      <div className="py-10 text-5xl text-center">Sản phẩm & Dịch vụ</div>
       <div className="flex justify-center m-2">
         {[
-          "/test_image/11.jpg",
-          "/test_image/44.jpg",
+          "/test_image/1.png",
+          "/test_image/2.png",
           "/test_image/77.jpg",
           "/test_image/11.jpg",
         ].map((image, index) => (
-          <div key={index} className="w-[15%] px-1">
-            <img
-              src={image}
-              alt="image_alt"
-              className="object-cover w-full h-full"
-              data-aos={index % 2 === 0 ? "fade-down" : "fade-up"}
-            />
-            <div className="p-2 text-lg text-center bg-yellow-50">Category</div>
-          </div>
+              <GalleryCard key={index} image={image} name={"123"} href={""}/>
+          // <div key={index} className="w-[15%] px-1">
+          //   <img
+          //     src={image}
+          //     alt="image_alt"
+          //     className="object-cover w-full h-full"
+          //     data-aos={index % 2 === 0 ? "fade-down" : "fade-up"}
+          //   />
+          //   <div className="p-2 text-lg text-center bg-yellow-50">Category</div>
+          // </div>
         ))}
-      </div> */}
+      </div>
 
       {/* divider */}
       <div className="py-10 text-3xl text-center bg-current">
