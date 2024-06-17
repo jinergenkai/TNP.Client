@@ -6,6 +6,8 @@ export default {
       colors: {
         transparent: "transparent",
         current: "#101010",
+        blue: "#007ace",
+        brown: "#f4f4f4",
         contrast: "#FFFFFF",
         lyellow: "#F4F4F4",
         white: "#ffffff",

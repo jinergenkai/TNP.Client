@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import BigCategoryCard from "../components/type-card";
+// import BigCategoryCard from "../components/type-card";
 import AOS from "aos";
 import IntroComponent from "../components/swiper";
-import ServiceSection from "../components/service";
+// import ServiceSection from "../components/service";
 import GalleryCard from "../components/gallery-card";
+import Statistic from "../components/statistic";
+// import InfiniteScroll from "../components/infinite-scroll";
 // import ServiceSection from "../components/service";
 
 export default function Home() {
@@ -27,7 +29,37 @@ export default function Home() {
         </div>
       </div> */}
 
-      {/* Infinitely Inspiring */}
+
+
+
+      <div className="flex my-32">
+        <div className="flex-1 mx-32" data-aos="fade-right">
+          <div className="text-5xl font-bold leading-tight">
+            <span className="mr-4 text-blue">TÂM NGÂN PHÁT
+            </span>
+            tự tin giữ vị trí chủ lực trên thị trường sắt thép Bà Rịa - Vũng Tàu
+          </div>
+          <div
+            className="m-5 mt-10 text-gray-700"
+          >
+            Cùng các doanh nghiệp đầu mối kinh doanh sắt thép khác và hơn 120 thương nhân phân phối sắt thép, Tâm Ngân Phát bảo đảm đầy đủ và kịp thời các chủng loại sắt thép phục vụ phát triển kinh tế - xã hội, an ninh quốc phòng và nhu cầu tiêu dùng của nhân dân.
+          </div>
+
+        </div>
+        <div className="flex flex-col flex-1 gap-8 m-auto">
+
+          <Statistic value={20} title={"Đơn vị\n thành viên"} titleWidth={200} body={"Trực tiếp kinh doanh \ntrên toàn quốc"}></Statistic>
+          <Statistic value={100} title={"Đơn vị\n thành viên"} titleWidth={200} body={"Trực tiếp kinh doanh \ntrên toàn quốc"}></Statistic>
+          <Statistic value={4000} title={"Đơn vị\n thành viên"} titleWidth={200} body={"Trực tiếp kinh doanh \ntrên toàn quốc"}></Statistic>
+
+        </div>
+      </div>
+
+
+
+
+
+      {/* Infinitely Inspiring
       <BigCategoryCard
         key={1}
         title="SẢN PHẨM VÀ DỊCH VỤ"
@@ -51,30 +83,29 @@ export default function Home() {
               "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
         ]}
-      ></BigCategoryCard>
+      ></BigCategoryCard> */}
 
       {/* image with title left, right */}
-      <div className="bg-current">
+      <div className="flex flex-row h-full bg-current">
         <img
-          src="/use-brick.webp"
+          // src="/use-brick.webp"
+          src="images/ren-sat.jpeg"
           alt="image_alt"
-          className="object-cover w-[50%] h-full inline-block"
+          className="object-cover w-[50%]"
           data-aos="fade-right"
         />
         <div
-          className="inline-block w-[50%] p-10 text-3xl"
+          className="w-[45%] p-10 text-3xl"
           data-aos="fade-left"
         >
-          <div className="m-32">
-            <div className="py-3 text-4xl font-dejaVuSerif">
-              Foundation of the Industry
+          <div className="m-32 text-white">
+            <div className="py-3 text-4xl font-dejaVuSerif ">
+              Nền tảng của sự phát triển
             </div>
-            <div className="text-xl">
-              "Founded in 2008, Huynh Hanh Construction Supplies has been
-              dedicated to providing top-notch building materials to our valued
-              customers. Our mission is to deliver exceptional products and
-              services that meet the highest standards of quality and
-              reliability."
+            <div className="text-sm">
+              Được thành lập vào năm ****, Công ty TÂM NGÂN PHÁT đã cam kết cung cấp các vật liệu sắt thép hàng đầu cho khách hàng quý giá của chúng tôi. Sứ mệnh của chúng tôi là mang đến những sản phẩm và dịch vụ xuất sắc, đáp ứng các tiêu chuẩn cao nhất về chất lượng và độ tin cậy."
+
+
             </div>
             {/* <br />
         <a href="/shop" className="text-base underline underline-offset-8">
@@ -85,44 +116,60 @@ export default function Home() {
       </div>
 
       {/* shop by category */}
-      <div className="py-10 text-5xl text-center">Sản phẩm & Dịch vụ</div>
+      <div className="w-screen py-10 text-4xl font-bold text-center">
+
+        Sản phẩm & Dịch vụ</div>
+      {/* <InfiniteScroll></InfiniteScroll> */}
       <div className="flex justify-center m-2">
         {[
           "/test_image/1.png",
           "/test_image/2.png",
-          "/test_image/77.jpg",
-          "/test_image/11.jpg",
+          "/test_image/1.png",
+          "/test_image/2.png",
         ].map((image, index) => (
-              <GalleryCard key={index} image={image} name={"123"} href={""}/>
-          // <div key={index} className="w-[15%] px-1">
-          //   <img
-          //     src={image}
-          //     alt="image_alt"
-          //     className="object-cover w-full h-full"
-          //     data-aos={index % 2 === 0 ? "fade-down" : "fade-up"}
-          //   />
-          //   <div className="p-2 text-lg text-center bg-yellow-50">Category</div>
-          // </div>
+          <GalleryCard key={index} image={image} name={"Grinding Side Trimmer Knife"} href={""} />
         ))}
       </div>
 
+
+
       {/* divider */}
       <div className="py-10 text-3xl text-center bg-current">
-        <div className="p-10 text-xl">
-          Hãy để Huynh Hạnh đồng hành cùng bạn qua từng công trình
+        <div className="p-10 text-xl text-brown">
+          Hãy để TÂM NGÂN PHÁT đồng hành cùng bạn qua từng công trình
           <br />
           hãy bắt đầu hành trình tạo nên sự khác biệt của riêng bạn!
         </div>
       </div>
-      <ServiceSection></ServiceSection>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.6571756380413!2d108.43062897572!3d12.670468721407488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171c29ed3e312d3%3A0x8bd995115445caf7!2zWMSDbmcgRMOizIB1IEh1eW5oIEhhzKNuaA!5e0!3m2!1svi!2s!4v1717307771347!5m2!1svi!2s"
-        width="600"
-        height="450"
-        style={{ border: "0" }}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+      {/* <ServiceSection></ServiceSection> */}
+
+      <div className="w-screen text-3xl font-bold text-center">
+        <div className="p-10" data-aos="fade-down">
+          LÃNH ĐẠO CỦA CHÚNG TÔI
+        </div>
+        <div className="flex items-center justify-center gap-10 align-middle" data-aos="fade-up">
+          {[1, 2, 3].map(() => (
+            <div className="text-xl">
+              <img src="./images/chu-doanh-nghiep.png" className="w-[50%] m-auto p-4" />
+              <div>Ông Tâm Ngân Phát</div>
+              <div className="font-light">Chủ doanh nghiệp</div>
+            </div>
+          ))
+          }
+        </div>
+
+        <div className="p-10"></div>
+
+        <iframe
+          src="https://www.google.com/maps/place/Ch%E1%BB%A3+Tr%E1%BA%A3ng+C%C3%A1t/@10.6410225,107.0887392,15z/data=!4m2!3m1!1s0x0:0x1ab165bdc10ea909?sa=X&ved=1t:2428&ictx=111"
+          width="600"
+          height="450"
+          style={{ border: "0" }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+      </div>
 
       <Footer></Footer>
     </div>

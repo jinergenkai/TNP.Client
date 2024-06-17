@@ -24,7 +24,7 @@ export default function Blog() {
             <div className="py-3 text-4xl">
               Blog
               <br />
-              <b className="text-6xl">SWAN Ice Elegance</b>
+              <b className="text-6xl">Tân Ngân Phát</b>
             </div>
             <div className="text-2xl">
               <br />

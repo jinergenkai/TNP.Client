@@ -165,7 +165,7 @@ const Footer = () => {
       </div>
       <div className="container px-4 pt-4 mx-auto mt-4 text-center border-t border-gray-700">
         <p className="text-sm">
-          &copy; 2024 Swan Ice Elegance. All rights reserved.
+          &copy; 2024 Tân Ngân Phát. All rights reserved.
         </p>
         <p className="text-sm">
           Swan Ice and the SWAN logo are registered trademarks of Swan ice

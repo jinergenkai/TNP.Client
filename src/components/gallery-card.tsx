@@ -11,7 +11,7 @@ export default function GalleryCard({ image, name , href}: { image: string; name
     });
   }, []);
   return (
-    <div className="relative bg-white" data-aos="zoom-in-up">
+    <div className="relative m-8 bg-brown" data-aos="fade-left">
       <Link to={href}>
       <div className="overflow-hidden bg-lyellow">
         <img

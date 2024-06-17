@@ -24,12 +24,12 @@ export default function About() {
             <div className="py-3 text-4xl">
               Chào mừng đến với
               <br />
-              <b className="text-6xl">SWAN Ice Elegance</b>
+              <b className="text-6xl">Tân Ngân Phát</b>
             </div>
             <div className="text-2xl">
               <br />
               Nơi hội tụ của những tuyệt tác trang sức đá quý, nơi mỗi thiết kế
-              đều là một thông điệp của vẻ đẹp và tinh tế. SWAN Ice Elegance tự
+              đều là một thông điệp của vẻ đẹp và tinh tế. Tân Ngân Phát tự
               hào là địa chỉ tin cậy cho những ai đam mê và yêu thích trang sức
               chính hãng, với những viên đá SWAN được chọn lọc kỹ lưỡng, mang
               đến cho bạn sự sang trọng và quý phái không thể phai mờ. Mỗi sản
