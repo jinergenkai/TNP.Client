@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CompanyInfo = () => {
   return (
     <div className="bg-gray-100 p-10">
