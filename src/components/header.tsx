@@ -10,7 +10,12 @@ export default function Header() {
     const handleScroll = () => {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
+      
+      // when scroll down
+      // if (scrollTop > lastScrollTop) {
+
+      // when top
+      if (scrollTop > 100) {
         setHeaderVisible(false);
       } else {
         setHeaderVisible(true);
@@ -30,7 +35,11 @@ export default function Header() {
       `}
     >
       <div className="flex items-center justify-between font-medium text-white align-middle font-montserrat ">
-          <img src="./logo.png" className="inline-block w-12 h-12 mr-4"></img>
+          <div className="w-12 h-12 mx-2 flex justify-center items-center">
+
+
+            <img src="./logo.png" className="w-[80%] h-[80%]"></img>
+          </div>
           <div className="top-0 flex-1 w-full text-2xl transform font-manhattan">
             TAM NGAN PHAT
           </div>

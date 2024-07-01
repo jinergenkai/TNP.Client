@@ -42,7 +42,7 @@ export default function Jewelry() {
       <Header />
       {/* banner swiper */}
       <IntroComponent
-        image = "/intro_video.mp4"
+        // image = "/intro_video.mp4"
       ></IntroComponent>
 
       <div className="bg-[#FFE2EB] px-1 py-3 xl:px-56">

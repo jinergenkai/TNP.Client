@@ -5,6 +5,7 @@ import Jewelry from "./pages/jewelry";
 import DetailJewelry from "./pages/detail-jewelry";
 import About from "./pages/about";
 import Blog from "./pages/blog";
+import Products from "./pages/products";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <Blog />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
   },
 ]);
 
